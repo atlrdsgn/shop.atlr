@@ -1,4 +1,17 @@
 {
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react", "react-hooks", "simple-import-sort", "@typescript-eslint"],
+  "ignorePatterns": [
+    "next.config.js",
+    "next-sitemap.config.js",
+    "src/lib/gsap/*",
+    "./src/lib/gsap/*",
+    "./public/*",
+    "./.next/*",
+    "./node_modules/*",
+    "./.husky/*",
+    "/public/*"
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:import/recommended",
@@ -15,6 +28,14 @@
     "node": true
   },
   "rules": {
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
+        "message": "Unexpected property on console object was called"
+      }
+    ],
+    "react/no-unknown-property": "off",
     "react/react-in-jsx-scope": 0,
     "react/display-name": 0,
     "react/prop-types": 0,
@@ -28,6 +49,8 @@
     "@typescript-eslint/ban-ts-comment": 0,
     "simple-import-sort/imports": "warn",
     "simple-import-sort/exports": "warn",
+    "import/no-named-as-default": "off",
+    "import/no-named-as-default-member": "off",
     "react-hooks/exhaustive-deps": [
       "warn",
       {

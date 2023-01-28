@@ -1,17 +1,22 @@
+import {
+  blackA,
+  gray,
+  grayA,
+  grayDark,
+  grayDarkA,
+  lime,
+  limeA,
+  limeDark,
+  mauve,
+  mauveDark,
+  slate,
+  slateA,
+  slateDark,
+  slateDarkA,
+  whiteA
+} from '@radix-ui/colors'
 import type * as Stitches from '@stitches/react'
 import {createStitches, defaultThemeMap} from '@stitches/react'
-import {
-  kitBorderWidths,
-  kitBreakpoints,
-  kitColors,
-  kitDarkColors,
-  kitFonts,
-  kitFontSizes,
-  kitFontWeights,
-  kitRadii,
-  kitSpace,
-  kitZIndices
-} from 'theme/index'
 
 export const {styled, css, theme, getCssText, createTheme, globalCss, keyframes, config, reset} = createStitches({
   prefix: 'atlr*',
@@ -44,7 +49,13 @@ export const {styled, css, theme, getCssText, createTheme, globalCss, keyframes,
        *
        * BrandKit.
        */
-      ...kitColors,
+
+      atlr1: '#CEFE71',
+      atlr2: '#BEBCA6',
+      atlr3: '#A493F8',
+      atlr4: '#837E95',
+
+      matte: '#050507',
 
       blur: 'rgba(72,67,73,0.1)',
 
@@ -70,6 +81,20 @@ export const {styled, css, theme, getCssText, createTheme, globalCss, keyframes,
       chxn13: '#BA8FF7',
       tartOrange: '#ff3333',
       berry: '#686799',
+
+      /**
+       *
+       * Radix-UI Colors
+       */
+      ...blackA,
+      ...whiteA,
+      ...gray,
+      ...grayA,
+      ...lime,
+      ...limeA,
+      ...mauve,
+      ...slate,
+      ...slateA,
 
       /**
        *
@@ -105,18 +130,90 @@ export const {styled, css, theme, getCssText, createTheme, globalCss, keyframes,
      * @fonts
      *********************************************************/
     fonts: {
-      ...kitFonts
+      system:
+        "-apple-system, BlinkMacSystemFont, 'Segoe UI','Roboto', 'Ubuntu', 'Fira Sans', 'Droid Sans','Helvetica Neue', sans-serif;",
+      sans: "-apple-system, BlinkMacSystemFont, 'Segoe UI','Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans','Helvetica Neue', sans-serif;",
+      mono: "Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono','Courier New', monospace;",
+
+      inter: '"Inter", sans-serif',
+      lateral: '"Lateral Extended Medium", sans-serif',
+      tStar: '"T-Star TW PRO", sans-serif',
+      montreal: '"Neue Montreal", sans-serif',
+      ppSans: '"Pangram Sans Condensed Bold", sans-serif'
     },
 
     /*********************************************************
      * @rest font sizes, font weights, space, breakpoints, etc.
      ************************************************************/
-    ...kitFontSizes,
-    ...kitFontWeights,
-    ...kitSpace,
-    ...kitRadii,
-    ...kitZIndices,
-    ...kitBorderWidths
+    fontSizes: {
+      xs: '0.625rem',
+      sm: '0.75rem',
+      base: '0.875rem',
+      md: '0.875rem',
+      lg: '1rem',
+      xl: '1.125rem',
+      '2xl': '1.375rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': '3rem',
+      '6xl': '3.75rem',
+      '7xl': '4.5rem',
+      '8xl': '6rem',
+      '9xl': '8rem'
+    },
+    fontWeights: {
+      superlite: 100,
+      thin: 200,
+      lite: 300,
+      normal: 400,
+      medium: 500,
+      semibold: 600,
+      bold: 700,
+      heavy: 800,
+      black: 900
+    },
+    space: {
+      0: '0px',
+      1: '4px',
+      2: '8px',
+      3: '12px',
+      4: '16px',
+      5: '18px',
+      6: '24px',
+      7: '28px',
+      8: '32px',
+      9: '36px',
+      10: '40px',
+      11: '50px',
+      12: '60px',
+      13: '70px',
+      14: '80px',
+      15: '90px',
+      16: '100px',
+      17: '110px',
+      18: '120px',
+      19: '130px',
+      20: '140px'
+    },
+    radii: {
+      xs: '4px',
+      sm: '6px',
+      md: '8px',
+      base: '8px',
+      lg: '10px',
+      xl: '12px',
+      '2xl': '16px',
+      pill: '50px',
+      none: '0px'
+    },
+    zIndices: {
+      0: '1',
+      1: '100',
+      2: '200',
+      3: '300',
+      4: '400',
+      max: '999'
+    }
   },
   /** ------------------------ END THEME -------------------------------------
 
@@ -125,13 +222,22 @@ export const {styled, css, theme, getCssText, createTheme, globalCss, keyframes,
    * and breakpoints.
    *************************************************************/
   media: {
-    xs: `(max-width: ${kitBreakpoints.xs})`, // 480px
-    sm: `(max-width: ${kitBreakpoints.sm})`, // 520px
-    md: `(max-width: ${kitBreakpoints.md})`, // 960px
-    lg: `(max-width: ${kitBreakpoints.lg})`, // 1280px
-    xl: `(max-width: ${kitBreakpoints.xl})`, // 1920px
-    full: `(min-width: ${kitBreakpoints.full})`, // 100vw
-    initial: `(max-width: ${kitBreakpoints.initial})`, // 100vw
+    /*
+    xs: '480px',
+    sm: '544px',
+    md: '768px',
+    lg: '1012px',
+    xl: '1280px',
+    full: '100vw',
+    initial: '100vw'
+    */
+    xs: '(max-width: 480px)',
+    sm: '(max-width: 544px)',
+    md: '(max-width: 768px)',
+    lg: '(max-width: 1012px)',
+    xl: '(max-width: 1280px)',
+    full: '(max-width: none)',
+    initial: '(max-width: none)',
     motion: '(prefers-reduced-motion: reduce)',
     safari: 'not all and (min-resolution:.001dpcm)',
     hover: '(any-hover: hover)',
@@ -187,7 +293,6 @@ export type CSS = Stitches.CSS<typeof config>
 
 export const darkTheme = createTheme('dark-theme', {
   colors: {
-    ...kitDarkColors,
     blur: 'rgba(0, 0, 0, 0.1)',
 
     fizz4: 'rgb(186, 143, 247)',
@@ -213,6 +318,20 @@ export const darkTheme = createTheme('dark-theme', {
 
     tartOrange: '#5e7ce2',
     maxBlue: '#72719b',
+
+    /**
+     *
+     *
+     * Radix Colors.
+     */
+    ...blackA,
+    ...whiteA,
+    ...grayDarkA,
+    ...grayDark,
+    ...slateDark,
+    ...slateDarkA,
+    ...limeDark,
+    ...mauveDark,
 
     /**
      *

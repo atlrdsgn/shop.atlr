@@ -145,7 +145,7 @@ const baseKitThemeColors = {
   limeA9: limeA.limeA9,
   limeA10: limeA.limeA10,
   limeA11: limeA.limeA11,
-  limeA12: limeA.limeA12,
+  limeA12: limeA.limeA12
   /* ------------------------ End Radix-UI Colors -------------------------------- */
 }
 

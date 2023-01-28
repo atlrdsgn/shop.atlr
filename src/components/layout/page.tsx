@@ -22,7 +22,7 @@ export const PageLayout = ({children, ...props}: PageProps) => {
           minWidth: '100vw',
           minHeight: '100vh',
           padding: 0,
-          margin: 0,
+          margin: 0
         }}>
         <ResponsiveHeader />
 

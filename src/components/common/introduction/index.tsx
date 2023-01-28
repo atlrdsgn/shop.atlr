@@ -13,7 +13,7 @@ export const Introduction = () => {
           position: 'absolute',
           bottom: 0,
           zIndex: 999,
-          paddingBottom: 30,
+          paddingBottom: 30
         }}>
         <Link href={'/start'}>
           <h4>Get started</h4>
@@ -28,7 +28,7 @@ export const Introduction = () => {
             display: 'flex',
             margin: 'auto',
             justifyContent: 'center',
-            alignItems: 'center',
+            alignItems: 'center'
           }}>
           <Typesxript />
         </Container>
@@ -39,7 +39,7 @@ export const Introduction = () => {
             display: 'flex',
             margin: 'auto',
             justifyContent: 'center',
-            alignItems: 'center',
+            alignItems: 'center'
           }}>
           <h4>by Atlr® Design</h4>
         </Container>

@@ -20,8 +20,8 @@ const globalKitSpacing = {
     17: '110px',
     18: '120px',
     19: '130px',
-    20: '140px',
-  },
+    20: '140px'
+  }
 }
 
 export const kitSpace = globalKitSpacing

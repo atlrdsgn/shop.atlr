@@ -7,5 +7,5 @@ export interface AppStore {
 
 export const useAppStore = create<AppStore>((set) => ({
   fontsLoaded: false,
-  setFontsLoaded: (fontsLoaded: boolean) => set((s) => ({...s, fontsLoaded})),
+  setFontsLoaded: (fontsLoaded: boolean) => set((s) => ({...s, fontsLoaded}))
 }))

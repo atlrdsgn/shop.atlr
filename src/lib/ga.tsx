@@ -17,7 +17,7 @@ export const pageview = (url: string) => {
     return
   }
   window.gtag('config', gaTrackingId, {
-    page_path: url,
+    page_path: url
   })
 }
 
@@ -26,7 +26,7 @@ export const event = ({
   action,
   category,
   label,
-  value,
+  value
 }: {
   action: string
   category: string
@@ -40,7 +40,7 @@ export const event = ({
   window.gtag('event', action, {
     event_category: category,
     event_label: label,
-    value: value,
+    value: value
   })
 }
 
@@ -48,14 +48,10 @@ export const event = ({
 export const GAScripts = () => {
   return (
     <>
+      <Script strategy='afterInteractive' async src={`https://www.googletagmanager.com/gtag/js?id=${gaTrackingId}`} />
       <Script
-        strategy="afterInteractive"
-        async
-        src={`https://www.googletagmanager.com/gtag/js?id=${gaTrackingId}`}
-      />
-      <Script
-        id="gtag-init"
-        strategy="afterInteractive"
+        id='gtag-init'
+        strategy='afterInteractive'
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
@@ -68,7 +64,7 @@ export const GAScripts = () => {
             // gtag('config', '<another-tracking-code>', {
             //   page_path: window.location.pathname,
             // });
-          `,
+          `
         }}
       />
     </>

@@ -1,14 +1,5 @@
 import {atlrDark} from './src'
-import {
-  blackA,
-  grayDark,
-  grayDarkA,
-  limeDark,
-  mauveDark,
-  slateDark,
-  slateDarkA,
-  whiteA,
-} from '@radix-ui/colors'
+import {blackA, grayDark, grayDarkA, limeDark, mauveDark, slateDark, slateDarkA, whiteA} from '@radix-ui/colors'
 
 const baseKitDarkThemeColors = {
   // defaults
@@ -124,7 +115,7 @@ const baseKitDarkThemeColors = {
   slateA9: slateDarkA.slateA9,
   slateA10: slateDarkA.slateA10,
   slateA11: slateDarkA.slateA11,
-  slateA12: slateDarkA.slateA12,
+  slateA12: slateDarkA.slateA12
 
   /* ------------------------ End Radix-UI Colors ------------------------------------- */
 }

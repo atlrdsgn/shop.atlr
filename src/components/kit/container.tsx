@@ -9,39 +9,39 @@ const containerStyles = styled('div', {
   paddingRight: 20,
   '@sm': {
     paddingLeft: 18,
-    paddingRight: 18,
+    paddingRight: 18
   },
   variants: {
     size: {
       '0': {
-        maxWidth: '480px',
+        maxWidth: '480px'
       },
       '1': {
-        maxWidth: '560px',
+        maxWidth: '560px'
       },
       '2': {
-        maxWidth: '715px',
+        maxWidth: '715px'
       },
       '3': {
-        maxWidth: '1145px',
+        maxWidth: '1145px'
       },
       '4': {
-        maxWidth: 'none',
-      },
+        maxWidth: 'none'
+      }
     },
     centered: {
       true: {
         display: 'flex',
         margin: 'auto',
         justifyContent: 'center',
-        alignItems: 'center',
-      },
-    },
+        alignItems: 'center'
+      }
+    }
   },
   defaultVariants: {
     size: '4',
-    centered: true,
-  },
+    centered: true
+  }
 })
 
 export const Container = containerStyles

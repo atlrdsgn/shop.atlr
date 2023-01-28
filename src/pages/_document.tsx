@@ -16,9 +16,9 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang='en'>
         <Head>
-          <style id="stitches" dangerouslySetInnerHTML={{__html: getCssAndReset()}} />
+          <style id='stitches' dangerouslySetInnerHTML={{__html: getCssAndReset()}} />
         </Head>
         <body style={{opacity: 0}}>
           <Main />

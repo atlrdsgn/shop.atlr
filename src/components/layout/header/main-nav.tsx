@@ -7,7 +7,7 @@ const sharedColor = css({color: theme.colors.slate6})
 const sharedTypography = css({
   fontFamily: theme.fonts.tStar,
   fontSize: 13,
-  fontWeight: 600,
+  fontWeight: 600
 })
 const NavText = styled('span', sharedColor, sharedTypography, {
   display: 'flex',
@@ -19,7 +19,7 @@ const NavText = styled('span', sharedColor, sharedTypography, {
   lineHeight: '24px',
 
   '&:hover': {
-    color: '$whiteA12',
+    color: '$whiteA12'
   },
 
   variants: {
@@ -29,14 +29,14 @@ const NavText = styled('span', sharedColor, sharedTypography, {
         alignItems: 'flex-start',
         textAlign: 'left',
         marginLeft: 0,
-        marginRight: 14,
+        marginRight: 14
       },
       middle: {
         justifyContent: 'center',
         alignItems: 'center',
         textAlign: 'center',
         marginLeft: 14,
-        marginRight: 14,
+        marginRight: 14
       },
       end: {
         justifyContent: 'flex-end',
@@ -44,10 +44,10 @@ const NavText = styled('span', sharedColor, sharedTypography, {
         textAlign: 'right',
 
         marginLeft: 14,
-        marginRight: 0,
-      },
-    },
-  },
+        marginRight: 0
+      }
+    }
+  }
 })
 
 const NavPlacement = css({
@@ -74,7 +74,7 @@ const NavPlacement = css({
   backgroundColor: 'transparent',
   backdropFilter: 'blur(40px) saturate(100%)',
   WebkitBackdropFilter: 'blur(40px) saturate(100%)',
-  borderBottom: `1px solid ${theme.colors.whiteA4}`,
+  borderBottom: `1px solid ${theme.colors.whiteA4}`
 })
 
 const Navbar = styled('div', NavPlacement)

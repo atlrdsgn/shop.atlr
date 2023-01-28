@@ -4,11 +4,11 @@ import {PassLink} from '@/components/kit'
 import React from 'react'
 
 const sharedColor = css({
-  color: theme.colors.atlr4 + ' !important',
+  color: theme.colors.atlr4 + ' !important'
 })
 const sharedTypography = css({
   fontFamily: theme.fonts.lateral,
-  fontSize: 12,
+  fontSize: 12
 })
 const NavText = styled('span', sharedColor, sharedTypography, {
   display: 'flex',
@@ -26,14 +26,14 @@ const NavText = styled('span', sharedColor, sharedTypography, {
         alignItems: 'flex-start',
         textAlign: 'left',
         marginLeft: 0,
-        marginRight: 14,
+        marginRight: 14
       },
       middle: {
         justifyContent: 'center',
         alignItems: 'center',
         textAlign: 'center',
         marginLeft: 14,
-        marginRight: 14,
+        marginRight: 14
       },
       end: {
         justifyContent: 'flex-end',
@@ -41,10 +41,10 @@ const NavText = styled('span', sharedColor, sharedTypography, {
         textAlign: 'right',
 
         marginLeft: 14,
-        marginRight: 0,
-      },
-    },
-  },
+        marginRight: 0
+      }
+    }
+  }
 })
 
 const TopNavPlacement = css({
@@ -73,7 +73,7 @@ const TopNavPlacement = css({
 
   backdropFilter: 'blur(40px) saturate(100%)',
   WebkitBackdropFilter: 'blur(40px) saturate(100%)',
-  borderBottom: `1.2px solid ${theme.colors.whiteA6}`,
+  borderBottom: `1.2px solid ${theme.colors.whiteA6}`
 })
 
 const Top = styled('div', TopNavPlacement)

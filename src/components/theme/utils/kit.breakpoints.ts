@@ -6,8 +6,8 @@ const globalKitBreakpoints = {
     lg: '1012px',
     xl: '1280px',
     full: '100vw',
-    initial: '100vw',
-  },
+    initial: '100vw'
+  }
 }
 
 export const kitBreakpoints = globalKitBreakpoints.breakpoints

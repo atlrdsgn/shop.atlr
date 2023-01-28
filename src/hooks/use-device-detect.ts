@@ -42,7 +42,7 @@ function getDD() {
     isIOS: ReactDeviceDetect.isIOS,
     isAndroid: ReactDeviceDetect.isAndroid,
     isBrowser: ReactDeviceDetect.isBrowser,
-    isTouch: isTouchDevice,
+    isTouch: isTouchDevice
   }
 }
 

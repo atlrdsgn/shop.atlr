@@ -2,7 +2,7 @@ import {Section, Space, Text} from '@/components/kit'
 
 export const About = () => {
   return (
-    <Section size="3" css={{padding: 18}}>
+    <Section size='3' css={{padding: 18}}>
       <Text
         uppercase
         css={{
@@ -11,7 +11,7 @@ export const About = () => {
           fontWeight: 'BOLD',
           lineHeight: '1',
           textAlign: 'left',
-          color: '#FAFF00',
+          color: '#FAFF00'
           // maxWidth: '80%',
         }}>
         ABOUT
@@ -32,8 +32,8 @@ export const About = () => {
           '@md': {
             width: '100%',
             maxWidth: '100%',
-            fontSize: 32,
-          },
+            fontSize: 32
+          }
         }}>
         Atelier® Design is an ever— expanding ecosystem of essential design components.
       </Text>
@@ -53,11 +53,10 @@ export const About = () => {
           '@md': {
             width: '100%',
             maxWidth: '100%',
-            fontSize: 32,
-          },
+            fontSize: 32
+          }
         }}>
-        However, at our core we are simply designers, developers, and a team that enjoys making
-        cool.
+        However, at our core we are simply designers, developers, and a team that enjoys making cool.
       </Text>
 
       <Space size={'sm'} />
@@ -74,13 +73,12 @@ export const About = () => {
 
           '@md': {
             width: '100%',
-            maxWidth: '100%',
-          },
+            maxWidth: '100%'
+          }
         }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Mauris nunc congue nisi vitae suscipit. Arcu odio ut sem
-        nulla pharetra. Leo duis ut diam quam. Consectetur purus ut faucibus pulvinar elementum
-        integer enim.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Mauris nunc congue nisi vitae suscipit. Arcu odio ut sem nulla pharetra. Leo duis ut diam quam.
+        Consectetur purus ut faucibus pulvinar elementum integer enim.
       </Text>
     </Section>
   )

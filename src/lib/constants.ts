@@ -40,8 +40,8 @@ export const defaultMeta = {
   ogImage: `${siteOrigin}/og.png`,
   twitter: {
     handle: '@basementstudio',
-    site: '@basementstudio',
-  },
+    site: '@basementstudio'
+  }
 }
 
 // TODO: add variable (NEXT_PUBLIC_GA_TRACKING_ID) to env if necessary

@@ -42,8 +42,7 @@
   src: url('/fonts/hauss/AtHaussAero-Bold.eot');
   src: local('At Hauss Aero Bold'), local('AtHaussAero-Bold'),
     url('/fonts/hauss/AtHaussAero-Bold.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/hauss/AtHaussAero-Bold.woff2') format('woff2'),
-    url('/fonts/hauss/AtHaussAero-Bold.woff') format('woff'),
+    url('/fonts/hauss/AtHaussAero-Bold.woff2') format('woff2'), url('/fonts/hauss/AtHaussAero-Bold.woff') format('woff'),
     url('/fonts/hauss/AtHaussAero-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;

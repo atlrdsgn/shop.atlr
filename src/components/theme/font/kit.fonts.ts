@@ -9,8 +9,8 @@ const fontKit = {
     lateral: '"Lateral Extended Medium", sans-serif',
     tStar: '"T-Star TW PRO", sans-serif',
     montreal: '"Neue Montreal", sans-serif',
-    ppSans: '"Pangram Sans Condensed Bold", sans-serif',
-  },
+    ppSans: '"Pangram Sans Condensed Bold", sans-serif'
+  }
 }
 
 export const kitFonts = fontKit

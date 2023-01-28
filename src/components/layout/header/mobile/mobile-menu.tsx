@@ -10,7 +10,7 @@ export const MobileMenu = () => (
   <MobileNav>
     <Popover.Root>
       <Popover.Trigger asChild>
-        <IconButton aria-label="Update dimensions" color={'atlr1'}>
+        <IconButton aria-label='Update dimensions' color={'atlr1'}>
           <Icxn variant={'menu'} />
         </IconButton>
       </Popover.Trigger>
@@ -26,7 +26,7 @@ export const MobileMenu = () => (
                   fontSize: 30,
                   fontWeight: 'bold',
                   marginBottom: 10,
-                  textAlign: 'left',
+                  textAlign: 'left'
                 }}>
                 Shop
               </Text>
@@ -37,7 +37,7 @@ export const MobileMenu = () => (
                   fontSize: 30,
                   fontWeight: 'bold',
                   marginBottom: 10,
-                  textAlign: 'left',
+                  textAlign: 'left'
                 }}>
                 About
               </Text>
@@ -48,12 +48,12 @@ export const MobileMenu = () => (
                   fontSize: 30,
                   fontWeight: 'bold',
                   marginBottom: 10,
-                  textAlign: 'left',
+                  textAlign: 'left'
                 }}>
                 Connect
               </Text>
             </Flex>
-            <PopoverClose aria-label="Close">
+            <PopoverClose aria-label='Close'>
               <Icxn variant={'vhs-close'} />
             </PopoverClose>
           </PopoverContent>
@@ -65,22 +65,22 @@ export const MobileMenu = () => (
 
 const slideUpAndFade = keyframes({
   '0%': {opacity: 0, transform: 'translateY(2px)'},
-  '100%': {opacity: 1, transform: 'translateY(0)'},
+  '100%': {opacity: 1, transform: 'translateY(0)'}
 })
 
 const slideRightAndFade = keyframes({
   '0%': {opacity: 0, transform: 'translateX(-2px)'},
-  '100%': {opacity: 1, transform: 'translateX(0)'},
+  '100%': {opacity: 1, transform: 'translateX(0)'}
 })
 
 const slideDownAndFade = keyframes({
   '0%': {opacity: 0, transform: 'translateY(-2px)'},
-  '100%': {opacity: 1, transform: 'translateY(0)'},
+  '100%': {opacity: 1, transform: 'translateY(0)'}
 })
 
 const slideLeftAndFade = keyframes({
   '0%': {opacity: 0, transform: 'translateX(2px)'},
-  '100%': {opacity: 1, transform: 'translateX(0)'},
+  '100%': {opacity: 1, transform: 'translateX(0)'}
 })
 
 const PopoverPortal = styled(Popover.Portal, {
@@ -90,7 +90,7 @@ const PopoverPortal = styled(Popover.Portal, {
   alignContent: 'center',
   alignItems: 'center',
   justifyContent: 'center',
-  boxSizing: 'border-box',
+  boxSizing: 'border-box'
 })
 
 const PopoverContent = styled(Popover.Content, {
@@ -114,12 +114,12 @@ const PopoverContent = styled(Popover.Content, {
     '&[data-side="top"]': {animationName: slideDownAndFade},
     '&[data-side="right"]': {animationName: slideLeftAndFade},
     '&[data-side="bottom"]': {animationName: slideUpAndFade},
-    '&[data-side="left"]': {animationName: slideRightAndFade},
+    '&[data-side="left"]': {animationName: slideRightAndFade}
   },
   '&:focus': {
-    boxShadow: 'none',
+    boxShadow: 'none'
     // boxShadow: `hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px, 0 0 0 2px ${violet.violet7}`,
-  },
+  }
 })
 
 const PopoverClose = styled(Popover.Close, {
@@ -137,7 +137,7 @@ const PopoverClose = styled(Popover.Close, {
   right: 34,
 
   '&:hover': {backgroundColor: theme.colors.slate4},
-  '&:focus': {boxShadow: `0 0 0 2px ${theme.colors.slate7}`},
+  '&:focus': {boxShadow: `0 0 0 2px ${theme.colors.slate7}`}
 })
 
 const Flex = styled('div', {display: 'flex'})
@@ -156,23 +156,23 @@ const IconButton = styled('button', {
   boxShadow: `0 2px 10px ${theme.colors.blackA7}`,
   '&:hover': {
     backgroundColor: '',
-    cursor: 'pointer',
+    cursor: 'pointer'
   },
   '&:focus': {boxShadow: 'none'},
 
   variants: {
     color: {
       white: {
-        color: 'white',
+        color: 'white'
       },
       atlr1: {
-        color: theme.colors.atlr1,
-      },
-    },
+        color: theme.colors.atlr1
+      }
+    }
   },
   defaultVariants: {
-    color: 'white',
-  },
+    color: 'white'
+  }
 })
 
 const NavPlacement = css({
@@ -200,7 +200,7 @@ const NavPlacement = css({
   backgroundColor: 'transparent',
   backdropFilter: 'blur(40px) saturate(100%)',
   WebkitBackdropFilter: 'blur(40px) saturate(100%)',
-  borderBottom: `1px solid ${theme.colors.blackA7}`,
+  borderBottom: `1px solid ${theme.colors.blackA7}`
 })
 
 const MobileNav = styled('div', NavPlacement)

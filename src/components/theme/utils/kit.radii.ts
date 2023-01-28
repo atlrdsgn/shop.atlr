@@ -8,8 +8,8 @@ const globalKitRadii = {
     xl: '12px',
     '2xl': '16px',
     pill: '50px',
-    none: '0px',
-  },
+    none: '0px'
+  }
 }
 
 export const kitRadii = globalKitRadii

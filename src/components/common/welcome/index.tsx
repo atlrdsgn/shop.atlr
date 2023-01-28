@@ -6,7 +6,7 @@ export const Welcome = () => {
   return (
     <Canvas>
       <Container
-        size="1"
+        size='1'
         css={{
           display: 'flex',
           margin: 'auto',
@@ -14,7 +14,7 @@ export const Welcome = () => {
           alignItems: 'center',
           justifyContent: 'center',
 
-          color: theme.colors.atlr1,
+          color: theme.colors.atlr1
         }}>
         <AtelierLogo width={'200'} />
       </Container>

@@ -4,7 +4,7 @@ const a = {
   atlr3: '#A493F8',
   atlr4: '#837E95',
 
-  matte: '#050507',
+  matte: '#050507'
 }
 
 const aDark = {
@@ -13,7 +13,7 @@ const aDark = {
   atlr3: '#CEFE71',
   atlr4: '#BEBCA6',
 
-  matte: '#C4C6CD',
+  matte: '#C4C6CD'
 }
 
 export const atlr = a

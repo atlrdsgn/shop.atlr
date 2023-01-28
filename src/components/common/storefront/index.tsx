@@ -4,13 +4,13 @@ import {AtlrLogo} from '@/components/vector'
 export const StoreFront = () => {
   return (
     <Container
-      size="1"
+      size='1'
       css={{
         display: 'flex',
         margin: 'auto',
         textAlign: 'center',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'center'
       }}>
       <AtlrLogo />
     </Container>

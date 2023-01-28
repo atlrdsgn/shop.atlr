@@ -6,7 +6,7 @@ const globalKitUtilities = {
    * linear gradient..
    */
   linearGradient: () => (value: Stitches.PropertyValue<'padding'>) => ({
-    backgroundImage: `linear-gradient(${value})`,
+    backgroundImage: `linear-gradient(${value})`
   }),
   /**
    *
@@ -14,7 +14,7 @@ const globalKitUtilities = {
    */
   p: (value: Stitches.PropertyValue<'padding'>) => ({
     // example p: 0, == padding: 0;
-    padding: value,
+    padding: value
   }),
 
   /**
@@ -22,7 +22,7 @@ const globalKitUtilities = {
    * pLeft === PADDING LEFT
    */
   pLeft: (value: Stitches.PropertyValue<'paddingLeft'>) => ({
-    paddingLeft: value,
+    paddingLeft: value
   }),
 
   /**
@@ -30,7 +30,7 @@ const globalKitUtilities = {
    * pRight === PADDING RIGHT
    */
   pRight: (value: Stitches.PropertyValue<'paddingRight'>) => ({
-    paddingRight: value,
+    paddingRight: value
   }),
 
   /**
@@ -38,7 +38,7 @@ const globalKitUtilities = {
    * pTop === PADDING TOP
    */
   pTop: (value: Stitches.PropertyValue<'paddingTop'>) => ({
-    paddingTop: value,
+    paddingTop: value
   }),
 
   /**
@@ -46,8 +46,8 @@ const globalKitUtilities = {
    * pBottom === PADDING BOTTOM
    */
   pBottom: (value: Stitches.PropertyValue<'paddingBottom'>) => ({
-    paddingBottom: value,
-  }),
+    paddingBottom: value
+  })
 }
 
 export const kitUtils = globalKitUtilities

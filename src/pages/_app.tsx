@@ -8,11 +8,7 @@ import {darkTheme, globalCss} from 'theme.config'
 import {useFontsLoaded} from '@/hooks/use-fonts-loaded'
 import {useKeydown} from '@/hooks/use-keydown'
 
-export type Page<P = Record<string, unknown>> = NextComponentType<
-  NextPageContext,
-  Record<string, unknown>,
-  P
-> & {
+export type Page<P = Record<string, unknown>> = NextComponentType<NextPageContext, Record<string, unknown>, P> & {
   getLayout?: GetLayoutFn<P>
 }
 
@@ -43,7 +39,7 @@ const globalStyle = globalCss({
     padding: 0,
     backgroundColor: '#050507',
 
-    minHeight: '-webkit-fill-available',
+    minHeight: '-webkit-fill-available'
   },
   body: {
     margin: 0,
@@ -52,8 +48,8 @@ const globalStyle = globalCss({
     WebkitTextSizeAdjust: '100%',
     WebkitFontSmoothing: 'antialiased',
     MozOsxFontSmoothing: 'grayscale',
-    backgroundColor: '#050507',
-  },
+    backgroundColor: '#050507'
+  }
 })
 
 export default App

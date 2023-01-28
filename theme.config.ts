@@ -1,9 +1,10 @@
 import type * as Stitches from '@stitches/react'
 import {createStitches, defaultThemeMap} from '@stitches/react'
-import {kitColors, kitDarkColors} from 'theme/color'
 import {
   kitBorderWidths,
   kitBreakpoints,
+  kitColors,
+  kitDarkColors,
   kitFonts,
   kitFontSizes,
   kitFontWeights,
@@ -12,10 +13,8 @@ import {
   kitZIndices
 } from 'theme/index'
 
-export type {VariantProps} from '@stitches/react'
-
 export const {styled, css, theme, getCssText, createTheme, globalCss, keyframes, config, reset} = createStitches({
-  prefix: 'atlr-',
+  prefix: 'atlr*',
   themeMap: {
     ...defaultThemeMap,
 
@@ -36,10 +35,46 @@ export const {styled, css, theme, getCssText, createTheme, globalCss, keyframes,
     maxInlineSize: 'space'
   },
 
+  /** ------------------------ Begin Theme -------------------------------------
+   * @main theme
+   */
   theme: {
     colors: {
+      /**
+       *
+       * BrandKit.
+       */
       ...kitColors,
 
+      blur: 'rgba(72,67,73,0.1)',
+
+      fizz4: 'rgb(226, 255, 112)',
+      fizz5: 'rgb(218, 255, 71)',
+
+      psych4: 'rgb(186, 143, 247)',
+      psych5: 'rgb(202, 96, 255)',
+
+      chxn1: '#f7f0f0',
+      chxn2: '#bcc1cd',
+      chxn3: '#A09FA6',
+      chxn4: '#484349',
+      chxn4A: 'rgba(72, 67, 73, 0.8)',
+      chxn5: '#2b2a30',
+      chxn6: '#5e7ce2',
+      chxn7: '#ff3333',
+      chxn8: '#72f863',
+      chxn9: '#ff3474',
+      chxn10: '#a288a6',
+      chxn11: '#93827f',
+      chxn12: '#222222',
+      chxn13: '#BA8FF7',
+      tartOrange: '#ff3333',
+      berry: '#686799',
+
+      /**
+       *
+       * sociol colors.
+       */
       ig: '#ff3333',
       insta: '#ff3474',
       maxBlue: '#5e7ce2',
@@ -49,81 +84,46 @@ export const {styled, css, theme, getCssText, createTheme, globalCss, keyframes,
       arena: '#484349',
       linkedin: '#0077B5',
       readcv: '#8A918E',
-      fb: '#4267B2'
+      fb: '#4267B2',
+
+      /**
+       *
+       *
+       *
+       * accidentsls...
+       *
+       */
+      clear: 'transparent',
+      transparent: 'transparent',
+      tp: 'transparent',
+      white: '#fff',
+      black: '#000',
+      current: 'currentColor'
     },
+
+    /******************************************************
+     * @fonts
+     *********************************************************/
     fonts: {
       ...kitFonts
     },
 
+    /*********************************************************
+     * @rest font sizes, font weights, space, breakpoints, etc.
+     ************************************************************/
     ...kitFontSizes,
     ...kitFontWeights,
     ...kitSpace,
     ...kitRadii,
     ...kitZIndices,
     ...kitBorderWidths
-    /*
-      fontSizes: {
-        1: '12px',
-        2: '14px',
-        3: '16px',
-        4: '18px',
-        5: '20px',
-        6: '24px',
-        7: '32px',
-        8: '36px',
-        9: '40px',
-        10: '48px',
-        11: '64px',
-        12: '88px',
-        13: '114px',
-        14: '120px',
-      },
-      lineHeights: {
-        1: '12px',
-        2: '14px',
-        3: '17px',
-        4: '18px',
-        5: '20px',
-        6: '25px',
-        7: '32px',
-        8: '39px',
-        9: '48px',
-        10: '48px',
-        12: '88px',
-        13: '114px',
-        14: '120px',
-      },
-      space: {
-        1: '4px',
-        2: '8px',
-        3: '16px',
-        4: '32px',
-        5: '64px',
-        6: '128px',
-        7: '256px',
-        8: '512px',
-      },
-      sizes: {
-        1: '4px',
-        2: '8px',
-        3: '16px',
-        4: '32px',
-        5: '64px',
-        6: '128px',
-        7: '256px',
-        8: '512px',
-      },
-      radii: {
-        1: '2px',
-        2: '4px',
-        3: '8px',
-        4: '10px',
-        5: '12px',
-        6: '14px',
-        round: '9999px',
-      },
-      */
   },
+  /** ------------------------ END THEME -------------------------------------
+
+  /*************************************************************
+   * @media
+   * and breakpoints.
+   *************************************************************/
   media: {
     xs: `(max-width: ${kitBreakpoints.xs})`, // 480px
     sm: `(max-width: ${kitBreakpoints.sm})`, // 520px
@@ -138,6 +138,14 @@ export const {styled, css, theme, getCssText, createTheme, globalCss, keyframes,
     dark: '(prefers-color-scheme: dark)',
     light: '(prefers-color-scheme: light)'
   },
+
+  /**
+   *
+   * utils..
+   *
+   * these are known to have some issues..
+   * try to avoid using if possible.
+   */
   utils: {
     font: (value: Stitches.PropertyValue<'fontFamily'>) => ({
       /**
@@ -172,17 +180,21 @@ export const {styled, css, theme, getCssText, createTheme, globalCss, keyframes,
   }
 })
 
+/** --------------------- VariantProps<typeof stitches> --------------------------- */
+export type {VariantProps} from '@stitches/react'
 export type CSS = Stitches.CSS<typeof config>
+/** ------------------------------------------------------------------------------ */
 
 export const darkTheme = createTheme('dark-theme', {
   colors: {
     ...kitDarkColors,
+    blur: 'rgba(0, 0, 0, 0.1)',
 
-    fizz: 'rgb(202, 96, 255)',
-    heliotrope: 'rgb(226, 255, 112)',
+    fizz4: 'rgb(186, 143, 247)',
+    fizz5: 'rgb(202, 96, 255)',
 
-    honeySuckle: 'rgb(186, 143, 247)',
-    portage: 'rgb(226, 255, 112)',
+    psych4: 'rgb(226, 255, 112)',
+    psych5: 'rgb(218, 255, 71)',
 
     chxn1: '#1A171A',
     chxn2: '#3f4b54',
@@ -199,10 +211,21 @@ export const darkTheme = createTheme('dark-theme', {
     chxn12: '#222222',
     chxn13: '#EAFF97',
 
-    blur: 'rgba(0, 0, 0, 0.1)',
-
     tartOrange: '#5e7ce2',
-    maxBlue: '#72719b'
+    maxBlue: '#72719b',
+
+    /**
+     *
+     *
+     * accidentsls...
+     */
+    clear: 'transparent',
+    transparent: 'transparent',
+    tp: 'transparent',
+
+    white: '#000',
+    black: '#fff',
+    current: 'currentColor'
   },
   utils: {}
 })

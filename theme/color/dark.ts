@@ -3,11 +3,6 @@ import {blackA, grayDark, grayDarkA, limeDark, mauveDark, slateDark, slateDarkA,
 import {atlrDark} from './src'
 
 const baseKitDarkThemeColors = {
-  // defaults
-  black: '#FFFFFF',
-  clear: 'transparent',
-  white: '#000000',
-
   atlr1: atlrDark.atlr1,
   atlr2: atlrDark.atlr2,
   atlr3: atlrDark.atlr3,

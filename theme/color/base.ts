@@ -11,16 +11,6 @@ const baseKitThemeColors = {
    *
    */
 
-  fizz: 'rgb(218, 255, 71)',
-  heliotrope: 'rgb(202, 96, 255)',
-  honeySuckle: 'rgb(226, 255, 112)',
-  portage: 'rgb(186, 143, 247)',
-  ruby: 'rgb(216, 43, 98)',
-  winterSky: 'rgb(255, 50, 115)',
-  black: '#000000',
-  clear: 'transparent',
-  white: '#ffffff',
-
   /* --------------------------------- ATLR -------------------------------------- */
   atlr1: atlr.atlr1,
   atlr2: atlr.atlr2,

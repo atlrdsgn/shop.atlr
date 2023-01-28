@@ -1,7 +1,7 @@
 import {Meta} from '@/components/common/meta'
 import {PageLayout} from '@/components/layout/page'
 
-const StartPage = () => {
+const ShopPage = () => {
   return (
     <PageLayout>
       <Meta />
@@ -9,4 +9,4 @@ const StartPage = () => {
   )
 }
 
-export default StartPage
+export default ShopPage

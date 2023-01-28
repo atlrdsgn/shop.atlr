@@ -1,12 +1,15 @@
 {
     "name": "shop.atlr",
-    "version": "1.4.0",
+    "version": "1.4.2",
     "description": "Atelier® Design Webstore.",
-    "repository": "https://github.com/atlrdsgn/shop.atlr",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/atlrdsgn/shop.atlr.git"
+    },
     "author": "@atlrdsgn <hi@atlrdsgn.com> Chandler Chappell",
     "private": true,
     "scripts": {
-        "prepack": "yarn add @stitches/react @radix-ui/colors @radix-ui/react-accessible-icon @radix-ui/react-portal @radix-ui/react-slot @radix-ui/react-visually-hidden",
         "prepare": "husky install",
         "dev": "next",
         "build": "next build",
@@ -16,6 +19,10 @@
         "lint": "next lint && stylelint '**/*.{css,scss}'",
         "tsc": "tsc --pretty --noEmit",
         "pretty": "prettier --write ."
+    },
+    "peerDependencies": {
+        "react": "^16.8.0-0 || ^17.0.0-0 || ^18.0.0",
+        "react-dom": "^16.8.0-0 || ^17.0.0-0 || ^18.0.0"
     },
     "dependencies": {
         "@radix-ui/colors": "^0.1.8",
@@ -35,7 +42,7 @@
         "zustand": "^4.3.2"
     },
     "devDependencies": {
-        "@next/bundle-analyzer": "^13.1.5",
+        "@next/bundle-analyzer": "^13.1.6",
         "@next/eslint-plugin-next": "^12.2.5",
         "@types/css-font-loading-module": "0.0.8",
         "@types/mousetrap": "^1.6.11",
@@ -76,95 +83,6 @@
     ],
     "ignorePatterns": [
         "next.config.js",
-        "next-sitemap.js"
-    ],
-    "extends": [
-        "eslint:recommended",
-        "plugin:import/recommended",
-        "plugin:import/typescript",
-        "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended",
-        "prettier",
-        "plugin:prettier/recommended",
-        "plugin:@next/next/recommended"
-    ],
-    "env": {
-        "es6": true,
-        "browser": true,
-        "node": true
-    },
-    "rules": {
-        "react/react-in-jsx-scope": 0,
-        "react/display-name": 0,
-        "react/prop-types": 0,
-        "@typescript-eslint/explicit-function-return-type": 0,
-        "@typescript-eslint/explicit-member-accessibility": 0,
-        "@typescript-eslint/indent": 0,
-        "@typescript-eslint/member-delimiter-style": 0,
-        "@typescript-eslint/no-explicit-any": 0,
-        "@typescript-eslint/no-var-requires": 0,
-        "@typescript-eslint/no-use-before-define": 0,
-        "@typescript-eslint/ban-ts-comment": 0,
-        "simple-import-sort/imports": "warn",
-        "simple-import-sort/exports": "warn",
-        "react-hooks/exhaustive-deps": [
-            "warn",
-            {
-                "additionalHooks": "(useIsomorphicLayoutEffect)"
-            }
-        ],
-        "react/no-unescaped-entities": 0,
-        "curly": [
-            "error",
-            "multi-line"
-        ],
-        "react/jsx-no-target-blank": [
-            2,
-            {
-                "allowReferrer": true
-            }
-        ],
-        "@typescript-eslint/no-unused-vars": [
-            2,
-            {
-                "argsIgnorePattern": "^_"
-            }
-        ],
-        "no-console": [
-            1,
-            {
-                "allow": [
-                    "warn",
-                    "error"
-                ]
-            }
-        ],
-        "prettier/prettier": [
-            "warn"
-        ],
-        "@typescript-eslint/explicit-module-boundary-types": "off"
-    },
-    "settings": {
-        "import/parsers": {
-            "@typescript-eslint/parser": [
-                ".ts",
-                ".tsx"
-            ]
-        },
-        "import/resolver": {
-            "typescript": {
-                "alwaysTryTypes": true,
-                "project": "."
-            }
-        },
-        "react": {
-            "version": "detect"
-        }
-    },
-
-    "lint-staged": {
-        "*.@(ts|tsx|css|scss)": [
-            "yarn lint --fix"
-        ]
-    }
+        "next-sitemap.config.js"
+    ]
 }

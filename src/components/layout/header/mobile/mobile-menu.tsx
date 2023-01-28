@@ -1,7 +1,6 @@
 import * as Popover from '@radix-ui/react-popover'
-import {css, keyframes, styled} from '@stitches/react'
 import * as React from 'react'
-import {theme} from 'theme.config'
+import {css, keyframes, styled, theme} from 'theme.config'
 
 import {Text} from '@/components/kit'
 import {AtelierPortal} from '@/components/primitives/portal'

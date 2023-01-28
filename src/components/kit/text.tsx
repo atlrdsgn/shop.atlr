@@ -1,5 +1,4 @@
-import {styled} from '@stitches/react'
-import {theme} from 'theme.config'
+import {styled, theme} from 'theme.config'
 
 export const Text = styled('span', {
   zIndex: 'inherit',

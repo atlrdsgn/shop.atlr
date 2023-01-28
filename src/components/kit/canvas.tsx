@@ -1,4 +1,4 @@
-import {styled} from '@stitches/react'
+import {styled} from 'theme.config'
 
 const canvasStyles = styled('div', {
   zIndex: 6,

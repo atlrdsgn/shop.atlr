@@ -1,6 +1,5 @@
-import {css, styled} from '@stitches/react'
 import * as React from 'react'
-import {theme} from 'theme.config'
+import {css, styled, theme} from 'theme.config'
 
 import {PassLink} from '@/components/kit'
 

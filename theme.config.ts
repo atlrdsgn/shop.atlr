@@ -19,26 +19,10 @@ import type * as Stitches from '@stitches/react'
 import {createStitches, defaultThemeMap} from '@stitches/react'
 
 export const {styled, css, theme, getCssText, createTheme, globalCss, keyframes, config, reset} = createStitches({
-  prefix: 'atlr*',
   themeMap: {
-    ...defaultThemeMap,
-
-    width: 'space',
-    height: 'space',
-    minWidth: 'space',
-    maxWidth: 'space',
-    minHeight: 'space',
-    maxHeight: 'space',
-    flexBasis: 'space',
-    gridTemplateColumns: 'space',
-    gridTemplateRows: 'space',
-    blockSize: 'space',
-    minBlockSize: 'space',
-    maxBlockSize: 'space',
-    inlineSize: 'space',
-    minInlineSize: 'space',
-    maxInlineSize: 'space'
+    ...defaultThemeMap
   },
+  prefix: 'atlr*',
 
   /** ------------------------ Begin Theme -------------------------------------
    * @main theme

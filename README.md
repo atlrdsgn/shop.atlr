@@ -20,7 +20,7 @@
 2. Install the dependencies with:
 
    ```
-   yarn
+   yarn install
    ```
 
 3. Start developing and watch for code changes:

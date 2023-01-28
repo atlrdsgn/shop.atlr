@@ -1,6 +1,7 @@
 export {Box} from './box'
 export {Canvas, FixedCanvas} from './canvas'
 export {Container} from './container'
+export {IconButton} from './icon-button'
 export {PassLink} from './pass-link'
 export {Section} from './section'
 export {Space} from './space'

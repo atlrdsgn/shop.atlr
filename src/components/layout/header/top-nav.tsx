@@ -3,21 +3,25 @@ import {css, styled, theme} from 'theme.config'
 
 import {PassLink} from '@/components/kit'
 
-const sharedColor = css({
-  color: theme.colors.atlr4 + ' !important'
-})
-const sharedTypography = css({
+const constColor = css({color: theme.colors.matte})
+
+const constType = css({
   fontFamily: theme.fonts.lateral,
-  fontSize: 12
+  fontSize: theme.fontSizes.base,
+  fontWeight: theme.fontWeights.normal,
+
+  lineHeight: '24px',
+  letterSpacing: 'normal',
+
+  paddingTop: 3
 })
-const NavText = styled('span', sharedColor, sharedTypography, {
+
+const NavText = styled('span', constColor, constType, {
   display: 'flex',
   flexDirection: 'row',
 
   margin: 'auto',
-  gap: 14,
-
-  lineHeight: '24px',
+  gap: 16,
 
   variants: {
     alignment: {
@@ -47,8 +51,8 @@ const NavText = styled('span', sharedColor, sharedTypography, {
   }
 })
 
-const TopNavPlacement = css({
-  backgroundColor: theme.colors.atlr1,
+const TopNavbar = css({
+  backgroundColor: theme.colors.fizz4,
 
   display: 'flex',
   flexDirection: 'row',
@@ -72,11 +76,11 @@ const TopNavPlacement = css({
   paddingRight: 18,
 
   backdropFilter: 'blur(40px) saturate(100%)',
-  WebkitBackdropFilter: 'blur(40px) saturate(100%)',
-  borderBottom: `1.2px solid ${theme.colors.whiteA6}`
+  WebkitBackdropFilter: 'blur(40px) saturate(100%)'
+  // borderBottom: `1.2px solid ${theme.colors.whiteA6}`
 })
 
-const Top = styled('div', TopNavPlacement)
+const Top = styled('div', TopNavbar)
 
 export const TopNav = () => {
   return (
@@ -85,8 +89,10 @@ export const TopNav = () => {
         <NavText alignment={'start'}>
           <PassLink href={'/about'}>ABOUT</PassLink>
           <PassLink href={'/store'}>BUNDLES</PassLink>
-          <PassLink href={'/store'}>FREE PKGS</PassLink>
+          <PassLink href={'/store'}>SAMPLE PACKS</PassLink>
         </NavText>
+
+        <NavText alignment={'end'}>ATELIER®</NavText>
       </Top>
     </>
   )

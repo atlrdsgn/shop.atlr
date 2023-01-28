@@ -2,15 +2,34 @@ import * as Popover from '@radix-ui/react-popover'
 import * as React from 'react'
 import {css, keyframes, styled, theme} from 'theme.config'
 
-import {Text} from '@/components/kit'
+import {IconButton} from '@/components/kit'
 import {AtelierPortal} from '@/components/primitives/portal'
 import {Icxn} from '@/components/vector/icxns'
+
+const items = [
+  {
+    name: 'Shop',
+    value: 'Icon'
+  },
+  {
+    name: 'Collections',
+    value: 'Accordion'
+  },
+  {
+    name: 'Connect',
+    value: 'Button'
+  },
+  {
+    name: 'Account',
+    value: 'Checkbox'
+  }
+]
 
 export const MobileMenu = () => (
   <MobileNav>
     <Popover.Root>
       <Popover.Trigger asChild>
-        <IconButton aria-label='Update dimensions' color={'atlr1'}>
+        <IconButton aria-label='Update dimensions' color={'psych'}>
           <Icxn variant={'menu'} />
         </IconButton>
       </Popover.Trigger>
@@ -19,39 +38,11 @@ export const MobileMenu = () => (
         <PopoverPortal>
           <PopoverContent sideOffset={8} alignOffset={0} align={'center'}>
             <Flex css={{flexDirection: 'column', gap: 2}}>
-              <Text
-                css={{
-                  lineHeight: '1',
-                  fontFamily: theme.fonts.lateral,
-                  fontSize: 30,
-                  fontWeight: 'bold',
-                  marginBottom: 10,
-                  textAlign: 'left'
-                }}>
-                Shop
-              </Text>
-              <Text
-                css={{
-                  lineHeight: '1',
-                  fontFamily: theme.fonts.lateral,
-                  fontSize: 30,
-                  fontWeight: 'bold',
-                  marginBottom: 10,
-                  textAlign: 'left'
-                }}>
-                About
-              </Text>
-              <Text
-                css={{
-                  lineHeight: '1',
-                  fontFamily: theme.fonts.lateral,
-                  fontSize: 30,
-                  fontWeight: 'bold',
-                  marginBottom: 10,
-                  textAlign: 'left'
-                }}>
-                Connect
-              </Text>
+              <>
+                {items.map((items) => (
+                  <PopoverItem key={items.name}>{items.name}</PopoverItem>
+                ))}
+              </>
             </Flex>
             <PopoverClose aria-label='Close'>
               <Icxn variant={'vhs-close'} />
@@ -105,7 +96,7 @@ const PopoverContent = styled(Popover.Content, {
   borderBottomRightRadius: 24,
   margin: 'auto',
   display: 'flex',
-  backgroundColor: theme.colors.atlr1,
+  backgroundColor: theme.colors.psych5,
   boxShadow: 'hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px',
   animationDuration: '0.9s',
   animationTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)',
@@ -142,37 +133,15 @@ const PopoverClose = styled(Popover.Close, {
 
 const Flex = styled('div', {display: 'flex'})
 
-const IconButton = styled('button', {
-  zIndex: 9999,
-  all: 'unset',
-  fontFamily: 'inherit',
-  borderRadius: 10,
-  height: 35,
-  width: 30,
-  display: 'inline-flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  color: theme.colors.atlr3,
-  boxShadow: `0 2px 10px ${theme.colors.blackA7}`,
-  '&:hover': {
-    backgroundColor: '',
-    cursor: 'pointer'
-  },
-  '&:focus': {boxShadow: 'none'},
-
-  variants: {
-    color: {
-      white: {
-        color: 'white'
-      },
-      atlr1: {
-        color: theme.colors.atlr1
-      }
-    }
-  },
-  defaultVariants: {
-    color: 'white'
-  }
+const PopoverItem = styled('span', {
+  color: theme.colors.matte,
+  lineHeight: '1',
+  fontFamily: theme.fonts.lateral,
+  fontSize: theme.fontSizes['3xl'],
+  fontWeight: theme.fontWeights.bold,
+  marginBottom: 12,
+  textAlign: 'left',
+  textTransform: 'uppercase'
 })
 
 const NavPlacement = css({

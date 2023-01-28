@@ -2,7 +2,7 @@ import Link from 'next/link'
 import * as React from 'react'
 import {styled, theme} from 'theme.config'
 
-type PassLinkProps = {href: string} & React.AnchorHTMLAttributes<HTMLAnchorElement>
+type PassLinkProps = {href?: string} & React.AnchorHTMLAttributes<HTMLAnchorElement>
 
 const StyledHref = styled(Link, {
   all: 'unset',
@@ -22,7 +22,7 @@ export const PassLink = React.forwardRef<HTMLAnchorElement, PassLinkProps>(({hre
 
   if (isExternal || isMailto) {
     return (
-      <LinkComp rel='noreferrer nofollow noopenner' ref={ref} target='_blank' {...props} href={href}>
+      <LinkComp {...props} ref={ref} rel='noreferrer nofollow noopenner' target='_blank' href={href}>
         {children}
       </LinkComp>
     )

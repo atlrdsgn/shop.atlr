@@ -15,7 +15,7 @@ export const Welcome = () => {
           alignItems: 'center',
           justifyContent: 'center',
 
-          color: theme.colors.atlr1
+          color: theme.colors.psych5
         }}>
         <AtelierLogo width={'200'} />
       </Container>

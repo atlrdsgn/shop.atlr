@@ -1,8 +1,8 @@
 import * as React from 'react'
-import {styled, theme} from 'theme.config'
 
 import {BodyContainer} from './body-container'
 import {ResponsiveHeader} from './header'
+import {PageWrapper} from './page-wrapper'
 
 type PageProps = {
   children?: React.ReactNode
@@ -13,7 +13,6 @@ export const PageLayout = ({children, ...props}: PageProps) => {
     <>
       <PageWrapper {...props}>
         <ResponsiveHeader />
-
         <BodyContainer>
           <main>{children}</main>
         </BodyContainer>
@@ -21,14 +20,3 @@ export const PageLayout = ({children, ...props}: PageProps) => {
     </>
   )
 }
-
-const PageWrapper = styled('div', {
-  backgroundColor: theme.colors.matte,
-  overflow: 'scroll',
-  display: 'flex',
-  flexDirection: 'column',
-  minWidth: '100vw',
-  minHeight: '100vh',
-  padding: 0,
-  margin: 0
-})

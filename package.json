@@ -3,6 +3,7 @@
     "version": "1.4.2",
     "description": "Atelier® Design Webstore.",
     "license": "MIT",
+    "homepage": "https://shop.atrldsgn.com",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/atlrdsgn/shop.atlr.git"

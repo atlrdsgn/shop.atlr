@@ -3,13 +3,17 @@ import {css, styled, theme} from 'theme.config'
 
 import {PassLink} from '@/components/kit'
 
-const sharedColor = css({color: theme.colors.slate6})
-const sharedTypography = css({
+const constColor = css({color: theme.colors.slate4})
+
+const constType = css({
   fontFamily: theme.fonts.tStar,
-  fontSize: 13,
-  fontWeight: 600
+  fontSize: theme.fontSizes.md,
+  fontWeight: theme.fontWeights.semibold,
+
+  letterSpacing: 'normal'
 })
-const NavText = styled('span', sharedColor, sharedTypography, {
+
+const NavText = styled('span', constColor, constType, {
   display: 'flex',
   flexDirection: 'row',
 

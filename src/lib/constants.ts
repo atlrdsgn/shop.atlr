@@ -35,12 +35,12 @@ export const basementLog = `
 
 // TODO: update this data
 export const defaultMeta = {
-  title: 'typesxript™ | @atlrdsgn',
-  description: `An opinionated starting project — React, Next.js, TypeScript, & Radix-UI.`,
+  title: 'atlrdsgn™ | Shop',
+  description: `Atelier® Design Webstore`,
   ogImage: `${siteOrigin}/og.png`,
   twitter: {
-    handle: '@basementstudio',
-    site: '@basementstudio'
+    handle: '@atlrdsgn',
+    site: '@atlrdsgn'
   }
 }
 

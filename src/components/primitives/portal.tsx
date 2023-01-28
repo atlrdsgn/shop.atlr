@@ -8,7 +8,7 @@ type Props = {
   className?: string
 }
 
-export const Portal = ({children, id = 'atlr-portal', onMount, className}: Props) => {
+export const AtelierPortal = ({children, id = 'atlr-portal', onMount, className}: Props) => {
   const ref = React.useRef<HTMLElement>()
   const [isMounted, setIsMounted] = React.useState(false)
 

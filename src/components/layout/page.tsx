@@ -1,17 +1,35 @@
-import React from 'react'
+import * as React from 'react'
+import {Box} from '@/components/kit'
+import {ResponsiveHeader} from './header'
+import {BodyContainer} from './body-container'
 
-type Props = {
+import {theme} from 'theme.config'
+
+type PageProps = {
   children?: React.ReactNode
-
-  // TODO after implementing header, footer
-  // headerProps?: HeaderProps
-  // footerProps?: FooterProps
 }
 
-export const PageLayout = ({children}: Props) => {
+export const PageLayout = ({children, ...props}: PageProps) => {
   return (
     <>
-      <main>{children}</main>
+      <Box
+        {...props}
+        css={{
+          backgroundColor: theme.colors.matte,
+          overflow: 'scroll',
+          display: 'flex',
+          flexDirection: 'column',
+          minWidth: '100vw',
+          minHeight: '100vh',
+          padding: 0,
+          margin: 0,
+        }}>
+        <ResponsiveHeader />
+
+        <BodyContainer>
+          <main>{children}</main>
+        </BodyContainer>
+      </Box>
     </>
   )
 }

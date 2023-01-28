@@ -1,5 +1,6 @@
-import {css, styled} from 'theme'
-const ContainerStyles = css({
+import {styled} from '@stitches/react'
+
+const containerStyles = styled('div', {
   boxSizing: 'border-box',
   flexShrink: 0,
   marginLeft: 'auto',
@@ -43,4 +44,4 @@ const ContainerStyles = css({
   },
 })
 
-export const Container = styled('div', ContainerStyles)
+export const Container = containerStyles

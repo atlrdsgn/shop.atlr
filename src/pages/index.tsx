@@ -1,13 +1,15 @@
-import {useRouter} from 'next/router'
-import {useEffect} from 'react'
+import * as React from 'react'
+import {Meta} from '@/components/common/meta'
+import {Welcome} from '@/components/common/welcome'
+import {PageLayout} from '@/components/layout/page'
 
-const Index = () => {
-  const router = useRouter()
-  useEffect(() => {
-    router.replace('/intro')
-  })
-
-  return
+const IndexPage = () => {
+  return (
+    <PageLayout>
+      <Meta />
+      <Welcome />
+    </PageLayout>
+  )
 }
 
-export default Index
+export default IndexPage

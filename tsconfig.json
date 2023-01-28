@@ -19,19 +19,16 @@
     "target": "esnext",
     "noUncheckedIndexedAccess": true,
     "importsNotUsedAsValues": "error",
+    "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "~/public/*": ["../public/*"],
-      "~/*": ["./src/*"],
-
       "@/*": ["./src/*"],
       "@/components/*": ["./src/components/*"],
       "@/lib/*": ["./src/lib/*"],
       "@/hooks/*": ["./src/hooks/*"],
       "@/context/*": ["./src/context/*"],
       "@/css/*": ["./src/css/*"]
-    },
-    "incremental": true
+    }
   },
   "exclude": ["node_modules"],
   "include": ["**/*.ts", "**/*.tsx"]

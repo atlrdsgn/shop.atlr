@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import {useAppStore} from '~/context/use-app-store'
+import {useAppStore} from '@/context/use-app-store'
 
 export const useFontsLoaded = () => {
   React.useEffect(() => {

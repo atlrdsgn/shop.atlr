@@ -1,6 +1,6 @@
-import {css, styled} from 'theme'
+import {styled} from '@stitches/react'
 
-const CanvasStyles = css({
+const canvasStyles = styled('div', {
   zIndex: 6,
   backgroundColor: 'transparent',
   boxSizing: 'border-box',
@@ -14,7 +14,7 @@ const CanvasStyles = css({
   padding: '0',
 })
 
-const FixedCanvasStyles = css({
+const fixedCanvasStyles = styled('div', {
   zIndex: 1,
   backgroundColor: 'transparent',
   boxSizing: 'border-box',
@@ -27,5 +27,5 @@ const FixedCanvasStyles = css({
   minWidth: '100vw',
 })
 
-export const Canvas = styled('div', CanvasStyles)
-export const FixedCanvas = styled('div', FixedCanvasStyles)
+export const Canvas = canvasStyles
+export const FixedCanvas = fixedCanvasStyles

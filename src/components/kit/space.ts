@@ -1,4 +1,4 @@
-import {styled} from 'theme'
+import {styled} from '@stitches/react'
 
 const SpaceStyles = styled('div', {
   all: 'unset',

@@ -1,52 +1,53 @@
-import {styled, theme} from 'theme'
+import {styled} from '@stitches/react'
+import {theme} from 'theme.config'
 
 export const Text = styled('span', {
   zIndex: 'inherit',
   lineHeight: '1.5',
   margin: '0',
-  fontFamily: theme.fonts.inter,
+  fontFamily: theme.fonts.system,
   fontWeight: 400,
   fontVariantNumeric: 'tabular-nums',
   display: 'block',
   variants: {
     size: {
       '1': {
-        fontSize: theme.fontSizes[1],
+        fontSize: theme.fontSizes.xs,
       },
       '2': {
-        fontSize: theme.fontSizes[2],
+        fontSize: theme.fontSizes.sm,
       },
       '3': {
-        fontSize: theme.fontSizes[3],
+        fontSize: theme.fontSizes.base,
       },
       '4': {
-        fontSize: theme.fontSizes[4],
+        fontSize: theme.fontSizes.lg,
       },
       '5': {
-        fontSize: theme.fontSizes[5],
+        fontSize: theme.fontSizes.xl,
         letterSpacing: '-.015em',
       },
       '6': {
-        fontSize: theme.fontSizes[6],
+        fontSize: theme.fontSizes['2xl'],
         letterSpacing: '-.016em',
       },
       '7': {
-        fontSize: theme.fontSizes[7],
+        fontSize: theme.fontSizes['3xl'],
         letterSpacing: '-.031em',
         textIndent: '-.005em',
       },
       '8': {
-        fontSize: theme.fontSizes[8],
+        fontSize: theme.fontSizes['4xl'],
         letterSpacing: '-.034em',
         textIndent: '-.018em',
       },
       '9': {
-        fontSize: theme.fontSizes[9],
+        fontSize: theme.fontSizes['5xl'],
         letterSpacing: '-.055em',
         textIndent: '-.025em',
       },
       '10': {
-        fontSize: theme.fontSizes[10],
+        fontSize: theme.fontSizes['6xl'],
         letterSpacing: '-.055em',
         textIndent: '-.025em',
       },
@@ -82,11 +83,19 @@ export const Text = styled('span', {
         WebkitTextFillColor: 'transparent',
       },
     },
+
+    // text-transform variants [boolean]...
+    uppercase: {
+      true: {
+        textTransform: 'uppercase',
+      },
+    },
   },
   defaultVariants: {
     size: '3',
     color: 'gray',
     gradient: false,
+    uppercase: false,
     align: 'center',
   },
 })

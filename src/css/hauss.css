@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'At Hauss Aero';
+  src: url('/fonts/hauss/AtHaussAero-Regular.eot');
+  src: local('At Hauss Aero Regular'), local('AtHaussAero-Regular'),
+    url('/fonts/hauss/AtHaussAero-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/hauss/AtHaussAero-Regular.woff2') format('woff2'),
+    url('/fonts/hauss/AtHaussAero-Regular.woff') format('woff'),
+    url('/fonts/hauss/AtHaussAero-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'At Hauss Aero';
+  src: url('/fonts/hauss/AtHaussAero-RegularItalic.eot');
+  src: local('At Hauss Aero Regular Italic'), local('AtHaussAero-RegularItalic'),
+    url('/fonts/hauss/AtHaussAero-RegularItalic.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/hauss/AtHaussAero-RegularItalic.woff2') format('woff2'),
+    url('/fonts/hauss/AtHaussAero-RegularItalic.woff') format('woff'),
+    url('/fonts/hauss/AtHaussAero-RegularItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'At Hauss Aero';
+  src: url('/fonts/hauss/AtHaussAero-Semibold.eot');
+  src: local('At Hauss Aero Semibold'), local('AtHaussAero-Semibold'),
+    url('/fonts/hauss/AtHaussAero-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/hauss/AtHaussAero-Semibold.woff2') format('woff2'),
+    url('/fonts/hauss/AtHaussAero-Semibold.woff') format('woff'),
+    url('/fonts/hauss/AtHaussAero-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'At Hauss Aero';
+  src: url('/fonts/hauss/AtHaussAero-Bold.eot');
+  src: local('At Hauss Aero Bold'), local('AtHaussAero-Bold'),
+    url('/fonts/hauss/AtHaussAero-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/hauss/AtHaussAero-Bold.woff2') format('woff2'),
+    url('/fonts/hauss/AtHaussAero-Bold.woff') format('woff'),
+    url('/fonts/hauss/AtHaussAero-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

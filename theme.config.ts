@@ -2,14 +2,14 @@ import type * as Stitches from '@stitches/react'
 import {createStitches, defaultThemeMap} from '@stitches/react'
 import {kitColors, kitDarkColors} from 'theme/color'
 import {
+  kitBorderWidths,
+  kitBreakpoints,
   kitFonts,
   kitFontSizes,
-  kitBorderWidths,
   kitFontWeights,
-  kitSpace,
-  kitZIndices,
   kitRadii,
-  kitBreakpoints
+  kitSpace,
+  kitZIndices
 } from 'theme/index'
 
 export type {VariantProps} from '@stitches/react'

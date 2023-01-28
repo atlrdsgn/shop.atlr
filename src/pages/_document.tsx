@@ -1,5 +1,5 @@
-import * as React from 'react'
 import Document, {DocumentContext, Head, Html, Main, NextScript} from 'next/document'
+import * as React from 'react'
 import {getCssText, reset} from 'theme.config'
 
 const getCssAndReset = () => {

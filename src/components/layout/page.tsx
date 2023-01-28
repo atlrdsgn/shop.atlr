@@ -1,9 +1,10 @@
 import * as React from 'react'
-import {Box} from '@/components/kit'
-import {ResponsiveHeader} from './header'
-import {BodyContainer} from './body-container'
-
 import {theme} from 'theme.config'
+
+import {Box} from '@/components/kit'
+
+import {BodyContainer} from './body-container'
+import {ResponsiveHeader} from './header'
 
 type PageProps = {
   children?: React.ReactNode

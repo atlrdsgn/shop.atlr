@@ -1,17 +1,15 @@
 @font-face {
-  font-family: Pangram Sans Condensed Bold;
-  font-weight: 600;
-  font-display: block;
-  font-style: normal;
-  src: url('/fonts/pangram-sans/PPPangramSans-CondensedBold.woff') format('woff2'),
-    url('/fonts/pangram-sans/PPPangramSans-CondensedBold.ttf') format('ttf');
+    font-family: Pangram Sans Condensed Bold;
+    font-weight: 600;
+    font-display: block;
+    font-style: normal;
+    src: url('/fonts/pangram-sans/PPPangramSans-CondensedBold.woff') format('woff2'), url('/fonts/pangram-sans/PPPangramSans-CondensedBold.ttf') format('ttf');
 }
 
 @font-face {
-  font-family: Pangram Sans Compressed;
-  font-weight: 800;
-  font-display: block;
-  font-style: normal;
-  src: url('/fonts/pangram-sans/PPPangramSans-CompressedExtrabold.woff2') format('woff2'),
-    url('/fonts/pangram-sans/PPPangramSans-CompressedExtrabold.ttf') format('woff');
+    font-family: Pangram Sans Compressed;
+    font-weight: 800;
+    font-display: block;
+    font-style: normal;
+    src: url('/fonts/pangram-sans/PPPangramSans-CompressedExtrabold.woff2') format('woff2'), url('/fonts/pangram-sans/PPPangramSans-CompressedExtrabold.ttf') format('woff');
 }

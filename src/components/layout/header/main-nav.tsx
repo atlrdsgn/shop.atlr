@@ -1,7 +1,8 @@
 import {css, styled} from '@stitches/react'
-import {PassLink} from '@/components/kit'
 import * as React from 'react'
 import {theme} from 'theme.config'
+
+import {PassLink} from '@/components/kit'
 
 const sharedColor = css({color: theme.colors.slate6})
 const sharedTypography = css({

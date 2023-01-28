@@ -1,10 +1,11 @@
-import * as React from 'react'
 import * as Popover from '@radix-ui/react-popover'
+import {css, keyframes, styled} from '@stitches/react'
+import * as React from 'react'
 import {theme} from 'theme.config'
-import {css, styled, keyframes} from '@stitches/react'
-import {Icxn} from '@/components/vector/icxns'
+
 import {Text} from '@/components/kit'
 import {AtelierPortal} from '@/components/primitives/portal'
+import {Icxn} from '@/components/vector/icxns'
 
 export const MobileMenu = () => (
   <MobileNav>

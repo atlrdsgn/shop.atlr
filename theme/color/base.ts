@@ -1,5 +1,6 @@
-import {atlr} from './src'
 import {blackA, gray, grayA, lime, limeA, mauve, slate, slateA, whiteA} from '@radix-ui/colors'
+
+import {atlr} from './src'
 
 const baseKitThemeColors = {
   /**

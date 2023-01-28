@@ -1,6 +1,6 @@
+import {styled} from '@stitches/react'
 import Link from 'next/link'
 import * as React from 'react'
-import {styled} from '@stitches/react'
 import {theme} from 'theme.config'
 
 type PassLinkProps = {href: string} & React.AnchorHTMLAttributes<HTMLAnchorElement>

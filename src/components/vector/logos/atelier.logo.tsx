@@ -1,4 +1,5 @@
 import * as React from 'react'
+
 import type {LogoProps} from '../types'
 
 const logo = ({color = 'currentColor', width, ...props}: LogoProps) => {

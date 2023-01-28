@@ -1,8 +1,9 @@
 import '@/css/global.scss'
-import * as React from 'react'
+
 import type {NextComponentType, NextPageContext} from 'next'
 import type {AppProps} from 'next/app'
 import {ThemeProvider} from 'next-themes'
+import * as React from 'react'
 import {darkTheme, globalCss} from 'theme.config'
 
 import {useFontsLoaded} from '@/hooks/use-fonts-loaded'

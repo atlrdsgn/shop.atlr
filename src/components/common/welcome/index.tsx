@@ -1,6 +1,7 @@
-import {Container, Canvas} from '@/components/kit'
-import {AtelierLogo} from '@/components/vector'
 import {theme} from 'theme.config'
+
+import {Canvas, Container} from '@/components/kit'
+import {AtelierLogo} from '@/components/vector'
 
 export const Welcome = () => {
   return (

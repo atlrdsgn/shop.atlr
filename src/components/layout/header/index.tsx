@@ -1,8 +1,10 @@
 import MediaQuery from 'react-responsive'
-import {MainNav} from './main-nav'
-import {TopNav} from './top-nav'
-import {MobileMenu} from './mobile/mobile-menu'
+
 import {AtelierPortal} from '@/components/primitives/portal'
+
+import {MainNav} from './main-nav'
+import {MobileMenu} from './mobile/mobile-menu'
+import {TopNav} from './top-nav'
 
 export const ResponsiveHeader = () => {
   return (

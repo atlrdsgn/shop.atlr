@@ -22,7 +22,7 @@ export const {styled, css, theme, getCssText, createTheme, globalCss, keyframes,
   themeMap: {
     ...defaultThemeMap
   },
-  prefix: 'atlr*',
+  prefix: 'atlr-',
 
   /** ------------------------ Begin Theme -------------------------------------
    * @main theme

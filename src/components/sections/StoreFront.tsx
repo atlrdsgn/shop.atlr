@@ -1,85 +1,51 @@
-import {Section, Space, Text} from '@/components/kit'
+import Image from 'next/image'
+import {styled, theme} from 'theme.config'
+
+import {Container, Section, Space} from '@/components/kit'
+// eslint-disable-next-line import/no-unresolved
+import heroImage from '@/public/img/ae.jpeg'
 
 export const StoreFront = () => {
   return (
     <Section size='3' css={{padding: 18}}>
-      <Text
-        uppercase
-        css={{
-          fontSize: 15,
-          fontFamily: '"T-Star TW PRO", sans-serif',
-          fontWeight: 'BOLD',
-          lineHeight: '1',
-          textAlign: 'left',
-          color: '#FAFF00'
-          // maxWidth: '80%',
-        }}>
-        ABOUT
-      </Text>
+      <Space size={'lg'} />
 
-      <Space size={'sm'} />
+      <Container size='2' css={{paddingTop: 20, paddingBottom: 50}}>
+        <TextElement>shop.atlrdsgn.com</TextElement>
+      </Container>
 
-      <Text
-        uppercase
-        css={{
-          fontSize: 52,
-          fontFamily: '"At Hauss Aero", sans-serif',
-          fontWeight: 500,
-          lineHeight: '1',
-          textAlign: 'left',
-          maxWidth: '80%',
-
-          '@md': {
+      <HeroImageContainer>
+        <Image
+          src={heroImage}
+          alt={'Vector Pkg one'}
+          placeholder={'blur'}
+          style={{
+            height: '100%',
             width: '100%',
-            maxWidth: '100%',
-            fontSize: 32
-          }
-        }}>
-        Atelier® Design is an ever— expanding ecosystem of essential design components.
-      </Text>
-
-      <Space size={'sm'} />
-
-      <Text
-        uppercase
-        css={{
-          fontSize: 52,
-          fontFamily: '"At Hauss Aero", sans-serif',
-          fontWeight: 500,
-          lineHeight: '1',
-          textAlign: 'left',
-          maxWidth: '80%',
-
-          '@md': {
-            width: '100%',
-            maxWidth: '100%',
-            fontSize: 32
-          }
-        }}>
-        However, at our core we are simply designers, developers, and a team that enjoys making cool.
-      </Text>
-
-      <Space size={'sm'} />
-
-      <Text
-        uppercase
-        css={{
-          fontSize: 18,
-          fontFamily: '"At Hauss Aero", sans-serif',
-          fontWeight: 500,
-          lineHeight: '1',
-          textAlign: 'left',
-          maxWidth: '80%',
-
-          '@md': {
-            width: '100%',
-            maxWidth: '100%'
-          }
-        }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Mauris nunc congue nisi vitae suscipit. Arcu odio ut sem nulla pharetra. Leo duis ut diam quam.
-        Consectetur purus ut faucibus pulvinar elementum integer enim.
-      </Text>
+            objectFit: 'cover',
+            borderRadius: 48
+          }}
+        />
+      </HeroImageContainer>
     </Section>
   )
 }
+
+const HeroImageContainer = styled('div', {
+  boxSizing: 'border-box',
+  position: 'relative',
+  borderRadius: theme.radii['5xl'],
+  height: '60vh',
+  backgroundColor: theme.colors.clear,
+  padding: 0
+})
+
+const TextElement = styled('span', {
+  color: theme.colors.chxn5,
+  fontFamily: theme.fonts.lateral,
+  fontSize: theme.fontSizes.base,
+  fontWeight: theme.fontWeights.normal,
+  lineHeight: '24px',
+  letterSpacing: 'normal',
+  textTransform: 'uppercase'
+})

@@ -88,11 +88,13 @@ export const TopNav = () => {
       <Top>
         <NavText alignment={'start'}>
           <PassLink href={'/about'}>ABOUT</PassLink>
-          <PassLink href={'/store'}>BUNDLES</PassLink>
-          <PassLink href={'/store'}>SAMPLE PACKS</PassLink>
+          <PassLink href={'/shop'}>BUNDLES</PassLink>
+          <PassLink href={'/shop'}>SAMPLE PACKS</PassLink>
         </NavText>
 
-        <NavText alignment={'end'}>ATELIER®</NavText>
+        <NavText alignment={'end'}>
+          <PassLink href={'/'}>ATELIER®</PassLink>
+        </NavText>
       </Top>
     </>
   )

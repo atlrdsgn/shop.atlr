@@ -5,7 +5,7 @@ import {Welcome} from '@/components/common/welcome'
 import {PageLayout} from '@/components/layout/page'
 
 const IndexPage = () => (
-  <PageLayout>
+  <PageLayout variant={'Cover'}>
     <Meta />
     <Welcome />
   </PageLayout>

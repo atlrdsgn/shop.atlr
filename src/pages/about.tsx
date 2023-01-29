@@ -1,14 +1,11 @@
 import {Meta} from '@/components/common/meta'
-import {BodyContainer} from '@/components/layout/body-container'
 import {PageLayout} from '@/components/layout/page'
 import {About} from '@/components/sections/About'
 
 const AboutPage = () => (
-  <PageLayout>
+  <PageLayout variant={'Page'}>
     <Meta />
-    <BodyContainer>
-      <About />
-    </BodyContainer>
+    <About />
   </PageLayout>
 )
 

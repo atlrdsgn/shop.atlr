@@ -4,7 +4,7 @@ import {PageLayout} from '@/components/layout/page'
 
 const IntroPage = () => {
   return (
-    <PageLayout>
+    <PageLayout variant={'Page'}>
       <Meta />
       <Introduction />
     </PageLayout>

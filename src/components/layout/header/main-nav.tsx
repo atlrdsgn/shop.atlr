@@ -89,11 +89,11 @@ export const MainNav = () => {
       <Navbar css={{}}>
         <NavText alignment={'start'}>
           <PassLink href={'/about'}>COLLECTIONS</PassLink>
-          <PassLink href={'/store'}>SHOP ALL</PassLink>
+          <PassLink href={'/shop'}>SHOP ALL</PassLink>
         </NavText>
 
         <NavText alignment={'end'}>
-          <PassLink href={'/'}>RESOURCES</PassLink>
+          <PassLink href={'/about'}>RESOURCES</PassLink>
         </NavText>
       </Navbar>
     </>

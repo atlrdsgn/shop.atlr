@@ -18,8 +18,8 @@ export type GetLayoutFn<P = Record<string, unknown>> = (
 ) => React.ReactNode
 
 const App = ({Component, pageProps, ...rest}: AppProps) => {
-  useFontsLoaded()
   globalStyle()
+  useFontsLoaded()
   useKeydown()
 
   const getLayout: GetLayoutFn =

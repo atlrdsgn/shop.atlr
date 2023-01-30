@@ -27,7 +27,13 @@ const App = ({Component, pageProps, ...rest}: AppProps) => {
 
   return (
     <>
-      <ThemeProvider value={{light: 'light-theme', dark: darkTheme.className}}>
+      <ThemeProvider
+        disableTransitionOnChange
+        enableSystem={true}
+        attribute={'class'}
+        storageKey={'atlr-theme'}
+        value={{light: 'light-theme', dark: darkTheme.className}}
+        defaultTheme={'light'}>
         {getLayout({Component, pageProps, ...rest})}
       </ThemeProvider>
     </>

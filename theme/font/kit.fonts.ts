@@ -5,12 +5,16 @@ const fontKit = {
   mono: "Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono','Courier New', monospace;",
 
   inter: '"Inter", sans-serif',
-  lateral: '"Lateral Extended Bold", sans-serif',
   tStar: '"T-Star TW PRO", sans-serif',
   montreal: '"Neue Montreal", sans-serif',
   ppSans: '"Pangram Sans Condensed Bold", sans-serif',
 
-  atHauss: '"At Hauss Aero", sans-serif'
+  // at hauss.
+  atHauss: '"At Hauss Aero", sans-serif',
+
+  // lateral.
+  lateral: '"Lateral Extended Bold", sans-serif',
+  lateralMedExt: '"Lateral Extended Medium", sans-serif'
 }
 
 export const kitFonts = fontKit

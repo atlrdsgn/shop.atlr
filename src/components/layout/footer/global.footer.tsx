@@ -1,23 +1,28 @@
+import content from 'atelier.config.json'
 import {styled, theme} from 'theme.config'
 
 import {Container, Section, Space} from '@/components/kit'
 
-export const GlobalFooter = () => (
-  <Section size='3' css={{padding: 18}}>
-    <Space size={'lg'} />
+export const GlobalFooter: React.FC = () => {
+  const {footer} = content
 
-    <Container size='2' css={{paddingTop: 20, paddingBottom: 50}}>
-      <TextElement>shop.atlrdsgn.com</TextElement>
-    </Container>
-  </Section>
-)
+  return (
+    <Section size='3' css={{padding: 18}}>
+      <Space size={'sm'} />
+      <Container size='2' css={{paddingTop: 20, paddingBottom: 40}}>
+        <TextElement>{footer.global}</TextElement>
+      </Container>
+      <Space size={'sm'} />
+    </Section>
+  )
+}
 
 const TextElement = styled('span', {
-  color: theme.colors.chxn5,
-  fontFamily: theme.fonts.lateral,
-  fontSize: theme.fontSizes.base,
+  color: theme.colors.slate8,
+  fontFamily: theme.fonts.lateralMedExt,
+  fontSize: theme.fontSizes.sm,
   fontWeight: theme.fontWeights.normal,
-  lineHeight: '24px',
-  letterSpacing: 'normal',
-  textTransform: 'uppercase'
+  lineHeight: 'normal',
+  letterSpacing: '-0.02rem',
+  textTransform: 'lowercase'
 })

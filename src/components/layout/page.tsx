@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import {BodyContainer} from './body-container'
-import {GlobalFooter} from './footer'
+import {Footer, GlobalFooter} from './footer'
 import {ResponsiveHeader} from './header'
 import {PageWrapper} from './page-wrapper'
 
@@ -28,6 +28,7 @@ export const PageLayout = ({children, variant, ...props}: PageProps) => {
           <BodyContainer>
             <main>{children}</main>
           </BodyContainer>
+          <Footer />
           <GlobalFooter />
         </PageWrapper>
       </>

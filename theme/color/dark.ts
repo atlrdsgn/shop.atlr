@@ -34,6 +34,8 @@ const baseKitDarkThemeColors = {
   atlr3: atlrDark.atlr3,
   atlr4: atlrDark.atlr4,
 
+  matte: atlrDark.matte,
+
   /* ------------------------ Radix-UI Colors ------------------------------------- */
   blackA1: blackA.blackA1,
   blackA2: blackA.blackA2,

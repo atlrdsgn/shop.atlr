@@ -14,6 +14,10 @@ const SectionStyles = styled('div', {
 
   variants: {
     size: {
+      '0': {
+        paddingTop: 10,
+        paddingBottom: 10
+      },
       '1': {
         paddingTop: 25,
         paddingBottom: 25

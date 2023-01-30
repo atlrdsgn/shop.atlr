@@ -1,8 +1,11 @@
+import content from 'atelier.config.json'
 import {styled, theme} from 'theme.config'
 
 import {Section, Space, Text} from '@/components/kit'
 
-export const About = () => {
+export const About: React.FC = () => {
+  const {about} = content
+
   return (
     <Section size='3' css={{padding: 18}}>
       <Text
@@ -18,41 +21,41 @@ export const About = () => {
         }}>
         ABOUT
       </Text>
-
       <Space size={'sm'} />
-
-      <LargeBoldParagraph>
-        Atelier® Design is an ever— expanding ecosystem of essential design components.
-      </LargeBoldParagraph>
-
+      <LargeBoldParagraph>{about.brand}</LargeBoldParagraph>
+      <Space size={'lg'} />
       <Space size={'md'} />
-
-      <LargeNormalParagraph>
-        However, at our core we are simply designers, developers, and a team that enjoys making cool.
-      </LargeNormalParagraph>
-
+      <LargeNormalParagraph>{about.core}</LargeNormalParagraph>
       <Space size={'md'} />
-
-      <SmParagraph>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Mauris nunc congue nisi vitae suscipit. Arcu odio ut sem nulla pharetra. Leo duis ut diam quam.
-        Consectetur purus ut faucibus pulvinar elementum integer enim.
-      </SmParagraph>
+      <SmParagraph>{about.about}</SmParagraph>
+      <Space size={'lg'} />
+      <Space size={'lg'} />
+      <Space size={'lg'} />
+      <Slogan>{about.slogan}</Slogan>
     </Section>
   )
 }
 
 const lgBoldTextStyles = {
-  fontSize: theme.fontSizes['4xl'],
+  color: theme.colors.white,
+  fontSize: theme.fontSizes['5xl'],
   fontFamily: theme.fonts.atHauss,
   fontWeight: theme.fontWeights.bold,
 
   textTransform: 'uppercase',
 
-  lineHeight: '1',
+  lineHeight: '1.1',
   textAlign: 'left',
-  maxWidth: '60%',
+  maxWidth: '75%',
 
+  '@initial': {
+    width: '50%',
+    maxWidth: '50%'
+  },
+  '@lg': {
+    width: '90%',
+    maxWidth: '90%'
+  },
   '@md': {
     width: '100%',
     maxWidth: '100%',
@@ -61,18 +64,26 @@ const lgBoldTextStyles = {
 }
 
 const lgNormalTextStyles = {
-  fontSize: theme.fontSizes['4xl'],
+  fontSize: theme.fontSizes['3xl'],
   fontFamily: theme.fonts.atHauss,
   fontWeight: theme.fontWeights.normal,
 
-  color: theme.colors.slate9,
+  color: theme.colors.slate8,
 
   textTransform: 'uppercase',
 
-  lineHeight: '1',
+  lineHeight: '1.1',
   textAlign: 'left',
-  maxWidth: '80%',
+  maxWidth: '75%',
 
+  '@initial': {
+    width: '50%',
+    maxWidth: '50%'
+  },
+  '@lg': {
+    width: '90%',
+    maxWidth: '90%'
+  },
   '@md': {
     width: '100%',
     maxWidth: '100%',
@@ -86,7 +97,7 @@ const smTextStyles = {
   fontFamily: theme.fonts.montreal,
   fontWeight: theme.fontWeights.normal,
 
-  color: theme.colors.slate9,
+  color: theme.colors.slate8,
 
   textTransform: 'uppercase',
 
@@ -100,7 +111,22 @@ const smTextStyles = {
   }
 }
 
+const sloganTextStyles = {
+  fontSize: theme.fontSizes.sm,
+
+  fontFamily: theme.fonts.atHauss,
+  fontWeight: theme.fontWeights.semibold,
+
+  color: theme.colors.slate4,
+
+  textTransform: 'uppercase',
+
+  lineHeight: '1.6',
+  textAlign: 'left'
+}
+
 const LargeBoldParagraph = styled('h2', lgBoldTextStyles)
 const LargeNormalParagraph = styled('h2', lgNormalTextStyles)
 
 const SmParagraph = styled('p', smTextStyles)
+const Slogan = styled('p', sloganTextStyles)

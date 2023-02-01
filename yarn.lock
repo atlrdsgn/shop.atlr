@@ -142,21 +142,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:13.1.6":
+"@next/eslint-plugin-next@npm:13.1.6, @next/eslint-plugin-next@npm:^13.1.6":
   version: 13.1.6
   resolution: "@next/eslint-plugin-next@npm:13.1.6"
   dependencies:
     glob: 7.1.7
   checksum: 15d3b5913a56d40c7ad33c77f5285a2388a3a4b4da2eb80a3899ac4b871c7bfca74fd45f98fcac3d6a91c8dce738da2661cf71e7e3116a14d5da0d5b68939e8d
-  languageName: node
-  linkType: hard
-
-"@next/eslint-plugin-next@npm:^12.2.5":
-  version: 12.3.4
-  resolution: "@next/eslint-plugin-next@npm:12.3.4"
-  dependencies:
-    glob: 7.1.7
-  checksum: e4ae97062f3efe8f70904cf0da296ab501a2924423273352d01b18d8ffff1eb2e9a65c47dd6f9cfa0d696eada272486a3f519b2786918d0a9ab735b93f5ce4b3
   languageName: node
   linkType: hard
 
@@ -2005,7 +1996,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.31.7, eslint-plugin-react@npm:^7.32.1":
+"eslint-plugin-react@npm:^7.31.7":
   version: 7.32.1
   resolution: "eslint-plugin-react@npm:7.32.1"
   dependencies:
@@ -2027,6 +2018,31 @@ __metadata:
   peerDependencies:
     eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
   checksum: e20eab61161a3db6211c2bd1eb9be3e407fd14e72c06c5f39a078b6ac37427b2af6056ee70e3954249bca0a04088ae797a0c8ba909fb8802e29712de2a41262d
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-react@npm:^7.32.2":
+  version: 7.32.2
+  resolution: "eslint-plugin-react@npm:7.32.2"
+  dependencies:
+    array-includes: ^3.1.6
+    array.prototype.flatmap: ^1.3.1
+    array.prototype.tosorted: ^1.1.1
+    doctrine: ^2.1.0
+    estraverse: ^5.3.0
+    jsx-ast-utils: ^2.4.1 || ^3.0.0
+    minimatch: ^3.1.2
+    object.entries: ^1.1.6
+    object.fromentries: ^2.0.6
+    object.hasown: ^1.1.2
+    object.values: ^1.1.6
+    prop-types: ^15.8.1
+    resolve: ^2.0.0-next.4
+    semver: ^6.3.0
+    string.prototype.matchall: ^4.0.8
+  peerDependencies:
+    eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
+  checksum: 2232b3b8945aa50b7773919c15cd96892acf35d2f82503667a79e2f55def90f728ed4f0e496f0f157acbe1bd4397c5615b676ae7428fe84488a544ca53feb944
   languageName: node
   linkType: hard
 
@@ -2084,9 +2100,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.32.0":
-  version: 8.32.0
-  resolution: "eslint@npm:8.32.0"
+"eslint@npm:^8.33.0":
+  version: 8.33.0
+  resolution: "eslint@npm:8.33.0"
   dependencies:
     "@eslint/eslintrc": ^1.4.1
     "@humanwhocodes/config-array": ^0.11.8
@@ -2129,7 +2145,7 @@ __metadata:
     text-table: ^0.2.0
   bin:
     eslint: bin/eslint.js
-  checksum: 23c8fb3c57291eecd9c1448faf603226a8f885022a2cd96e303459bf72e39b7f54987c6fb948f0f9eecaf7085600e6eb0663482a35ea83da12e9f9141a22b91e
+  checksum: 727e63ab8b7acf281442323c5971f6afdd5b656fbcebc4476cf54e35af51b2f180617433fc5e1952f0449ca3f43a905527f9407ea4b8a7ea7562fc9c3f278d4c
   languageName: node
   linkType: hard
 
@@ -2721,12 +2737,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^7.0.4":
-  version: 7.0.4
-  resolution: "husky@npm:7.0.4"
+"husky@npm:^8.0.3":
+  version: 8.0.3
+  resolution: "husky@npm:8.0.3"
   bin:
     husky: lib/bin.js
-  checksum: c6ec4af63da2c9522da8674a20ad9b48362cc92704896cc8a58c6a2a39d797feb2b806f93fbd83a6d653fbdceb2c3b6e0b602c6b2e8565206ffc2882ef7db9e9
+  checksum: 837bc7e4413e58c1f2946d38fb050f5d7324c6f16b0fd66411ffce5703b294bd21429e8ba58711cd331951ee86ed529c5be4f76805959ff668a337dbfa82a1b0
   languageName: node
   linkType: hard
 
@@ -3603,9 +3619,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-sitemap@npm:^3.1.47":
-  version: 3.1.47
-  resolution: "next-sitemap@npm:3.1.47"
+"next-sitemap@npm:^3.1.48":
+  version: 3.1.48
+  resolution: "next-sitemap@npm:3.1.48"
   dependencies:
     "@corex/deepmerge": ^4.0.29
     minimist: ^1.2.7
@@ -3615,7 +3631,7 @@ __metadata:
   bin:
     next-sitemap: bin/next-sitemap.mjs
     next-sitemap-cjs: bin/next-sitemap.cjs
-  checksum: 1eaa429d1ba719206f59d8428315570f7c234ba73ab621ed0b393ad690ccfde1b270147c9f80dcc8f787d287092a7a539fb16ea95b6917c067e7a8fa95fd7b51
+  checksum: 84a3983c400cf67705757434b87f28a63a4fa57a71185076d0653a2082488cb402e4c4b981f04cff0da28da3f4f09d47a058822bb45a83613c6d48998641dff6
   languageName: node
   linkType: hard
 
@@ -4546,7 +4562,7 @@ __metadata:
   resolution: "shop.atlr@workspace:."
   dependencies:
     "@next/bundle-analyzer": ^13.1.6
-    "@next/eslint-plugin-next": ^12.2.5
+    "@next/eslint-plugin-next": ^13.1.6
     "@radix-ui/colors": ^0.1.8
     "@radix-ui/react-accessible-icon": ^1.0.0
     "@radix-ui/react-popover": ^1.0.3
@@ -4563,22 +4579,22 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.49.0
     "@typescript-eslint/parser": ^5.49.0
     cross-env: ^7.0.3
-    eslint: ^8.32.0
+    eslint: ^8.33.0
     eslint-config-next: ^13.1.6
     eslint-config-prettier: ^8.6.0
     eslint-import-resolver-typescript: ^3.5.3
     eslint-plugin-import: ^2.27.5
     eslint-plugin-jsx-a11y: ^6.7.1
     eslint-plugin-prettier: ^4.0.0
-    eslint-plugin-react: ^7.32.1
+    eslint-plugin-react: ^7.32.2
     eslint-plugin-react-hooks: ^4.6.0
     eslint-plugin-simple-import-sort: ^10.0.0
     hls.js: ^1.3.1
-    husky: ^7.0.4
+    husky: ^8.0.3
     lint-staged: ^11.2.6
     mousetrap: 1.6.5
     next: ^13.1.2
-    next-sitemap: ^3.1.47
+    next-sitemap: ^3.1.48
     next-themes: ^0.2.1
     prettier: ^2.8.3
     react: ^18.2.0
@@ -5093,7 +5109,7 @@ __metadata:
 
 "typescript@patch:typescript@^4.9.4#~builtin<compat/typescript>":
   version: 4.9.4
-  resolution: "typescript@patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=f456af"
+  resolution: "typescript@patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=a1c5e5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver

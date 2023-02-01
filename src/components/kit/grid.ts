@@ -140,31 +140,49 @@ const gridStyles = css({
      */
     gap: {
       '1': {
-        gap: '4px'
+        gap: '1px'
       },
       '2': {
-        gap: '$2'
+        gap: '2px'
       },
       '3': {
-        gap: '$3'
+        gap: '3px'
       },
       '4': {
-        gap: '$4'
+        gap: '4px'
       },
       '5': {
-        gap: '$5'
+        gap: '5px'
       },
       '6': {
-        gap: '$6'
+        gap: '6px'
       },
       '7': {
-        gap: '$7'
+        gap: '7px'
       },
       '8': {
-        gap: '$8'
+        gap: '8px'
       },
       '9': {
-        gap: '$9'
+        gap: '9px'
+      },
+      '10': {
+        gap: '10px'
+      },
+      '11': {
+        gap: '11px'
+      },
+      '12': {
+        gap: '12px'
+      },
+      '13': {
+        gap: '13px'
+      },
+      '14': {
+        gap: '14px'
+      },
+      '15': {
+        gap: '15px'
       }
     },
     /**
@@ -186,7 +204,7 @@ const gridStyles = css({
         columnGap: '$4'
       },
       '5': {
-        columnGap: '$5'
+        columnGap: '5px'
       },
       '6': {
         columnGap: '$6'
@@ -220,7 +238,7 @@ const gridStyles = css({
         rowGap: '$4'
       },
       '5': {
-        rowGap: '$5'
+        rowGap: '5px'
       },
       '6': {
         rowGap: '$6'
@@ -252,9 +270,9 @@ const gridStyles = css({
     justify: 'between',
     flow: 'row',
     columns: '1',
-    gap: '1',
-    gapX: '1',
-    gapY: '1',
+    gap: '5',
+    gapX: '5',
+    gapY: '5',
     border: false
   }
 })

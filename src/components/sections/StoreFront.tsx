@@ -26,7 +26,7 @@ export const StoreFront = () => {
       </Section>
 
       <Section size='0' css={{paddingLeft: 18, paddingRight: 18}}>
-        <Grid columns={2} align='center' justify='center' gap={5}>
+        <Grid columns={2} align='center' justify='center' gapY={'5'} gapX={'5'} gap={'5'}>
           <GridItem />
           <GridItem />
         </Grid>

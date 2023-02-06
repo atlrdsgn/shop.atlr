@@ -6,6 +6,10 @@ const a = {
   atlr5: '#232A2F',
   atlr6: '#161D1D',
 
+  atlr7: '#303030',
+  atlr8: '#8b7dc6',
+  atlr9: '#f3f3f3',
+
   matte: '#050507'
 }
 

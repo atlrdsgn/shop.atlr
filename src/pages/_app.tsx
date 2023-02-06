@@ -4,7 +4,7 @@ import type {NextComponentType, NextPageContext} from 'next'
 import type {AppProps} from 'next/app'
 import {ThemeProvider} from 'next-themes'
 import * as React from 'react'
-import {darkTheme, globalCss} from 'theme.config'
+import {darkTheme, globalCss, theme} from 'theme.config'
 
 import {useFontsLoaded} from '@/hooks/use-fonts-loaded'
 import {useKeydown} from '@/hooks/use-keydown'
@@ -44,7 +44,7 @@ const globalStyle = globalCss({
   html: {
     margin: 0,
     padding: 0,
-    backgroundColor: '#050507',
+    backgroundColor: theme.colors.atlr7,
 
     minHeight: '-webkit-fill-available'
   },
@@ -55,7 +55,7 @@ const globalStyle = globalCss({
     WebkitTextSizeAdjust: '100%',
     WebkitFontSmoothing: 'antialiased',
     MozOsxFontSmoothing: 'grayscale',
-    backgroundColor: '#050507'
+    backgroundColor: theme.colors.atlr7
   }
 })
 

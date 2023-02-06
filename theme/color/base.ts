@@ -45,6 +45,9 @@ const baseKitThemeColors = {
   atlr4: atlr.atlr4,
   atlr5: atlr.atlr5,
   atlr6: atlr.atlr6,
+  atlr7: atlr.atlr7,
+  atlr8: atlr.atlr8,
+  atlr9: atlr.atlr9,
 
   matte: atlr.matte,
   /* --------------------------------- End ATLR --------------------------------- */

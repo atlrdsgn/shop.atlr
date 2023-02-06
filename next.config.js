@@ -1,4 +1,5 @@
 const withBundleAnalyzer = require('@next/bundle-analyzer')
+const path = require('path');
 
 /**
  * @type {import('next').NextConfig}
@@ -8,6 +9,12 @@ const config = {
     swcMinify: true,
     images: {
         formats: ['image/avif', 'image/webp'],
+    },
+    experimental: {
+        appDir: true,
+    },
+    sassOptions: {
+        includePaths: [path.join(__dirname, 'src/css')],
     },
 }
 
